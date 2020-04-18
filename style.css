@@ -1,0 +1,165 @@
+*{
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+	/*background-color: red;*/
+	font-family: 'Lato', sans-serif;
+}
+
+header{
+	height: 100vh;
+	width: 100%;
+	background-image:/*linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)),*/ url('image/taj.jpeg');
+	background-repeat:no-repeat;
+	background-size: cover;
+}
+
+.top{
+	width: 100%;
+	height: 15vh;
+	display: flex;
+	justify-content: space-between;
+	align-items:center;
+}
+
+
+.logo{
+	width: 25%;
+	/*background-color: red;*/
+	text-align: center;
+}
+
+.menu{
+	width: 50%;
+	/*text-align: center;*/
+	/*background-color: red; */
+	/*text-align: center; */
+	text-transform: uppercase;
+	display: flex;
+	justify-content: space-around;
+	font-weight: 800;
+	
+}
+
+.menu a{
+	text-decoration: none;
+	/*justify-content: space-around;*/
+	color: white;
+}
+
+
+main{
+ 	width: 100%;
+ 	height: 85vh;
+ 	display: flex;
+ 	justify-content: center;
+ 	align-items: center;
+ 	text-align:center;
+ 	color: white; 
+}
+
+main h3,h1,p{
+	margin-bottom: 10px;
+	font-weight: 800;
+	/*font-size:40px; */
+}
+main h3{
+	/*color:#00b894;*/
+	font-size: 25px;
+}
+
+main h1{
+	font-size:50px; 
+}
+
+main h1{
+	font-size: 65px;
+	text-transform: capitalize;
+}
+
+main p{
+	font-size: 35px;
+	margin-bottom: 10px;
+}
+
+section a{
+	padding: 12px 30px;
+	border-radius: 4px;
+	outline: none;
+	text-transform: uppercase;
+	font-size: 13px;
+	font-weight: 500;
+	text-decoration: none;
+	letter-spacing: 1px;
+	color: #fff;
+	transition: 0.25s ease;
+
+}
+
+
+section .btn1{
+	/*border: 2px solid #black;*/
+	background: #00b894;
+	text-decoration: none;
+}
+
+section .btn1:hover{
+	background: #fff;
+	text-decoration: none;
+	color: black;
+}
+
+section .btn2{
+	background: #fff;
+	text-decoration: none;
+	color: black;
+	
+}
+
+section .btn2:hover{
+	background: #00b894;
+	text-decoration: none;
+}
+
+
+.change_content:after{
+	content: '';
+	animation: changetexts 15s infinite linear;
+	color: #00b894;
+}
+
+@keyframes changetexts{
+	0%{
+		content:"Darjeeling";  
+	}
+	10%{
+		content:"Delhi"; 
+	}
+	20%{
+		content:"Shimla"; 
+	}
+	30%{
+		content:"Jaipur"; 
+	}
+	40%{
+		content:"Agra"; 
+	}
+	50%{
+		content:"Nainital"; 
+	}
+	60%{
+		content:"Cheenai"; 
+	}
+	70%{
+		content:"Himanchal Pradesh"; 
+	}
+	80%{
+		content:"Kerala"; 
+	}
+	90%{
+		content:"Manali"; 
+	}
+	100%{
+		content:"Mumbai"; 
+	}
+} 
